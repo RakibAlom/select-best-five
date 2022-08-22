@@ -1,0 +1,38 @@
+body{
+  font-family: 'Manrope', sans-serif;
+  font-weight:500;
+  color:#ffffff;
+}
+h1{
+  font-family: 'Berkshire Swash', cursive;
+}
+.text-brown{
+  color:#FF5E19;
+}
+header{
+  background-size: 100%;
+  min-height:500px;
+}
+button:disabled{
+  background-color: #A2A9AF !important;
+  cursor: not-allowed;
+}
+.wave_underline::after{
+  content:'';
+  display:block;
+  height:20px;
+  background-image: url('../images/wave-under-line.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-height:900px){
+  header{
+      min-height:600px;
+  }
+}
+
+@media (max-height:600px){
+  header{
+      min-height:300px;
+  }
+}
