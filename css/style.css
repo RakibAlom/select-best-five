@@ -25,6 +25,7 @@ button:disabled{
   background-repeat: no-repeat;
   background-position: center;
 }
+
 @media (min-height:900px){
   header{
       min-height:600px;
