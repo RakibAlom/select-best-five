@@ -13,15 +13,20 @@ function getElementTextValue(elementId) {
 // GET ELEMENT VALUE
 function getElementValue(elementId) {
   const element = getId(elementId);
-  const value = parseInt(element.value);
-  return value;
+  let value = parseInt(element.value);
+  if(value < 0) {
+    alert ("You can not provide negative value");
+    return value = 0;
+  } else {
+    return value;
+  }
 }
 
 /* ===== SELECT PLAYER EVENT HANDLER START ===== */
-const players = document.querySelectorAll('.select_player');
+const players = document.querySelectorAll('.select-single-player');
 for(let player of players) {
   player.addEventListener('click', function (event) {
-    const playerSelect = event.target.parentNode.querySelector('.player_name');
+    const playerSelect = event.target.parentNode.querySelector('.player-name');
     const playerName = playerSelect.innerText;
 
     const selectPlayers = getId('selectPlayers');

@@ -17,10 +17,10 @@ button:disabled{
   background-color: #A2A9AF !important;
   cursor: not-allowed;
 }
-.wave_underline::after{
+.wave-under-line::after{
   content:'';
   display:block;
-  height:20px;
+  height:18px;
   background-image: url('../images/wave-under-line.png');
   background-repeat: no-repeat;
   background-position: center;
