@@ -57,7 +57,7 @@ getId('playerBudgetCalculate').addEventListener('click', function () {
   const totalPlayerBudget = perPlayerBudget * totalSelectPlayers;
   
   if(isNaN(totalPlayerBudget)) {
-    return alert('Please, provide valid number');
+    return alert('Please, provide valid number!');
   }
 
   const playerBudgetAmount = getId('playerBudgetAmount');
@@ -76,7 +76,7 @@ getId('calculateTotalBudget').addEventListener('click', function () {
   const totalBudget = playersBudget + managerBudget + coachBudget;
 
   if(isNaN(totalBudget)) {
-    return alert('Please, provide all input valid number');
+    return alert('Please, provide all input valid number!');
   }
   totalBudgetId.innerText = totalBudget;
 
