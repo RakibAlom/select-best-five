@@ -5,28 +5,35 @@ function getId(id) {
 // GET ELEMENT TEXT
 function getElementText(elementId) {
   const element = getId(elementId);
-  let elementText = element.innerText;
+  const elementText = element.innerText;
   return elementText;
 }
 // GET ELEMENT VALUE
 function getElementValue(elementId) {
   const element = getId(elementId);
-  let elementValue = element.value;
+  const elementValue = element.value;
   return elementValue;
 }
 
+// SELECT PLAYER EVENT HANDLER
 getId('players').addEventListener('click', function (event) {
     const player = event.target.parentNode.querySelector('.player_name');
     const playerName = player.innerText;
-    
-    let li = document.createElement('li');
-    li.innerText = playerName;
-    
-    let selectPlayers = getId('selectPlayers');
-    selectPlayers.appendChild(li);
 
-    event.target.classList.add('bg-gray-500');
-    event.target.setAttribute('disabled', true);
+    const selectPlayers = getId('selectPlayers');
+    let totalSelectPlayers = selectPlayers.children.length;
+
+    if(totalSelectPlayers >= 5) {
+      return alert ('Already, You Selected 5 Players!');
+    }
+    else{
+      const li = document.createElement('li');
+      li.innerText = playerName;
+      selectPlayers.appendChild(li);
+      event.target.classList.add('bg-gray-500');
+      event.target.setAttribute('disabled', true);
+    }
 })
 
+/* ===== BUDGET 
 
