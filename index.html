@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose Your Best Five Footballer</title>
-    <!-- Favicon -->
+    <title>World's best Five footballer</title>
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <!-- Google Fonts -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS -->
+    <!-- TAILWIND CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Style CSS -->
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <!-- HEADER START -->
     <header class="header text-center bg-[url('images/banner-bg.png')] py-20 flex items-center bg-bottom bg-no-repeat bg-black">
-      <div class="container mx-auto px-5 flex flex-col items-center">
+      <div class="lg:container mx-auto px-5 flex flex-col items-center">
         <h1 class="text-3xl xl:text-6xl pb-8 sm:mb-3 text-brown sm:bg-[url('images/arc-underline.png')] bg-no-repeat bg-right-bottom">World's best Five footballer</h1>
         <p class="text-xl">Although there is no one correct answer, most of the players on this list have been objectively <br> the best players in the world this past season. </p>
       </div>
     </header>
     <!-- HEADER END-->
+
     <!-- MAIN CONTENT START -->
-    <main class="bg-gray-700 pt-16 pb-32 text-white">
-      <div class="container mx-auto px-5">
+    <main class="bg-[#151515] pt-16 pb-32 text-white">
+      <div class="lg:container mx-auto px-5">
         <div class="flex flex-col lg:flex-row gap-12 lg:gap-5 lg:items-start">
+
           <!-- SELECTED PALYERS START -->
           <div id="players" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 grow text-center">
 
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/mohammed_salah.jpg" alt="Mohammed Salah" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Mohammed Salah</h2>
@@ -42,7 +44,7 @@
                 <button class="select_player uppercase bg-blue-700 py-2 px-5 w-full hover:bg-blue-800">select</button>
               </div>
             </div>
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/ronaldo.jpg" alt="Cristiano Ronaldo" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Cristiano Ronaldo</h2>
@@ -52,7 +54,7 @@
                 <button class="select_player uppercase bg-blue-700 py-2 px-5 w-full hover:bg-blue-800">select</button>
               </div>
             </div>
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/kaka.jpg" alt="Kaká" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Kaká</h2>
@@ -62,7 +64,7 @@
                 <button class="select_player uppercase bg-blue-700 py-2 px-5 w-full hover:bg-blue-800">select</button>
               </div>
             </div>
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/messi.png" alt="Messi" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Lionel Messi</h2>
@@ -72,7 +74,7 @@
                 <button id="selectPlayer" class="select_player uppercase bg-blue-700 py-2 px-5 w-full hover:bg-blue-800">select</button>
               </div>
             </div>
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/neymar.png" alt="Neymar Jr" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Neymar Jr</h2>
@@ -82,7 +84,7 @@
                 <button class="select_player uppercase bg-blue-700 py-2 px-5 w-full hover:bg-blue-800">select</button>
               </div>
             </div>
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/mbappé.png" alt="Kylian Mbappé" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Kylian Mbappé</h2>
@@ -92,7 +94,7 @@
                 <button class="select_player uppercase bg-blue-700 py-2 px-5 w-full hover:bg-blue-800">select</button>
               </div>
             </div>
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/machado.png" alt="Vítor Machado" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Vítor Machado</h2>
@@ -102,7 +104,7 @@
                 <button class="select_player uppercase bg-blue-700 py-2 px-5 w-full hover:bg-blue-800">select</button>
               </div>
             </div>
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/ramos.png" alt="Sergio Ramos" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Sergio Ramos</h2>
@@ -112,7 +114,7 @@
                 <button class="select_player uppercase bg-blue-700 py-2 px-5 w-full hover:bg-blue-800">select</button>
               </div>
             </div>
-            <div class="card_item bg-gray-900 border border-gray-500">
+            <div class="card_item bg-[#0D0D0D] border border-[#434343]">
               <img src="./images/players/sanches.png" alt="Renato Sanches" class="w-full">
               <div class="card_info p-5">
                 <h2 class="player_name text-2xl mb-3">Renato Sanches</h2>
@@ -125,36 +127,37 @@
             
           </div>
           <!-- SELECTED PLAYERS END -->
+
           <!-- BUDGET CALCULATE START -->
           <aside class="lg:w-72">
-            <div class="selected_v bg-gray-900 p-8 mb-5">
+            <div class="selected_v bg-[#0D0D0D] p-8 mb-5">
               <h2 class="text-2xl wave_underline text-center mb-5">Selected-V</h2>
               <ol id="selectPlayers" class="list-decimal ml-5 leading-loose text-xl font-normal"></ol>
             </div>
-            <div class="budget bg-gray-900 p-8">
+            <div class="budget bg-[#0D0D0D] p-8">
               <h2 class="text-2xl wave_underline text-center mb-5">Budget</h2>
               <div class="flex justify-between items-center gap-5 mb-5 text-lg">
                 <label for="perPlayer" class="text-gray-400">Per Player</label>
-                <input value="0" class="py-2 px-3 border border-white w-24 bg-transparent" type="text">
+                <input id="perPlayerBudget" value="0" class="py-2 px-3 border border-white w-24 bg-transparent" type="text">
               </div>
-              <button class="bg-blue-700 py-2 px-5 w-full hover:bg-blue-800 mb-8">Calculate</button>
+              <button id="playerBudgetCalculate"  class="bg-blue-700 py-2 px-5 w-full hover:bg-blue-800 mb-8">Calculate</button>
               <div class="flex justify-between items-center gap-5 mb-5 text-lg text-gray-400">
                 <div>Player Expenses</div>
-                <div class="text-white">$ <span>0</span>
+                <div class="text-white">$<span id="playerBudgetAmount">0</span>
                 </div>
               </div>
               <div class="flex justify-between items-center gap-5 mb-5 text-lg">
                 <label for="managerCost" class="text-gray-400">Manager</label>
-                <input value="0" class="py-2 px-3 border border-white w-24 bg-transparent" type="text">
+                <input id="managerBudget" value="0" class="py-2 px-3 border border-white w-24 bg-transparent" type="text">
               </div>
               <div class="flex justify-between items-center gap-5 mb-5 text-lg">
                 <label for="coachCost" class="text-gray-400">Coach</label>
-                <input value="0" class="py-2 px-3 border border-white w-24 bg-transparent" type="text">
+                <input id="coachBudget" value="0" class="py-2 px-3 border border-white w-24 bg-transparent" type="text">
               </div>
-              <button class="bg-blue-700 py-2 px-5 w-full hover:bg-blue-800 mb-8">Calculate Total</button>
+              <button id="calculateTotalBudget" class="bg-blue-700 py-2 px-5 w-full hover:bg-blue-800 mb-8">Calculate Total</button>
               <div class="flex justify-between items-center gap-5 text-lg text-gray-400">
                 <div>Total</div>
-                <div class="text-brown">$ <span>0</span>
+                <div class="text-brown">$<span id="totalBudget">0</span>
                 </div>
               </div>
             </div>
@@ -164,13 +167,15 @@
       </div>
     </main>
     <!-- MAIN CONTENT END-->
+
     <!-- FOOTER START -->
-    <footer class="bg-gray-700 text-center py-12 text-white border-t border-gray-500">
-      <div class="container mx-auto px-5">
+    <footer class="bg-neutral-900 text-center py-4 md:py-8 lg:py-10 text-white border-t border-[#434343]">
+      <div class="lg:container mx-auto px-5">
         <p>Copyright @ 2022 All Rights Reserved.</p>
       </div>
     </footer>
     <!-- FOOTER END -->
+
     <script src="./js/main.js"></script>
   </body>
 </html>
