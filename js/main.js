@@ -15,6 +15,18 @@ function getElementValue(elementId) {
   return elementValue;
 }
 
-getId('selectPlayer').addEventListener('click', function () {
-  
+getId('players').addEventListener('click', function (event) {
+    const player = event.target.parentNode.querySelector('.player_name');
+    const playerName = player.innerText;
+    
+    let li = document.createElement('li');
+    li.innerText = playerName;
+    
+    let selectPlayers = getId('selectPlayers');
+    selectPlayers.appendChild(li);
+
+    event.target.classList.add('bg-gray-500');
+    event.target.setAttribute('disabled', true);
 })
+
+
