@@ -1,6 +1,2 @@
-# Select Best Five Landing Page
-Please create yoru private repo 
-## [https://classroom.github.com/a/_LNX3tEE](https://classroom.github.com/a/_LNX3tEE)
-
-### Private Repo Link: [https://classroom.github.com/a/_LNX3tEE](https://classroom.github.com/a/_LNX3tEE)
-# best-five-dom-assignment-RakibAlom
+# World Best Five Footballer
+𝐋𝐢𝐯𝐞 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: https://world-best-five-footballer.netlify.app/
